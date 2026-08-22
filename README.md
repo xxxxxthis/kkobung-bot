@@ -32,3 +32,5 @@ Interactions Endpoint 서명을 검증하는 최소 버전입니다.
 - Bot Token은 절대 GitHub에 올리지 마세요.
 - `.env`, `.dev.vars`는 `.gitignore`에 포함되어 있습니다.
 - 이 최소 버전이 성공한 다음 D1/코인/출석/내전/투표 등의 기능을 합치는 게 안전합니다.
+
+- deploy trigger
