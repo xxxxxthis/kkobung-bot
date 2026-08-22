@@ -1,6 +1,6 @@
 {
   "name": "kkobung-bot",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -11,6 +11,6 @@
     "discord-interactions": "^4.4.0"
   },
   "devDependencies": {
-    "wrangler": "^4.68.0"
+    "wrangler": "^4.125.0"
   }
 }
