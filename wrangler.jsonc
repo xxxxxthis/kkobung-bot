@@ -2,5 +2,18 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "kkobung-bot",
   "main": "src/index.js",
-  "compatibility_date": "2026-08-22"
+  "compatibility_date": "2026-08-22",
+
+  "vars": {
+    "DISCORD_APPLICATION_ID": "1540858606730223789",
+    "DISCORD_GUILD_ID": "1540851155263950848"
+  },
+
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "kkobung-db",
+      "database_id": "da3bf0c5-c77f-4757-94d3-3aec8bb24421"
+    }
+  ]
 }
