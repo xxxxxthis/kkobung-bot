@@ -1,4 +1,15 @@
 export const COMMANDS = [
+
+  { name: "일일퀘스트", description: "오늘의 일일 퀘스트 확인" },
+  { name: "퀘스트보상", description: "완료한 퀘스트 보상 수령" },
+  { name: "내역", description: "최근 경제 거래내역 확인" },
+  { name: "칭호", description: "칭호 확인/장착",
+    options: [{ name:"아이디", description:"장착할 칭호 ID", type:3, required:false }] },
+  { name: "랜덤박스", description: "보유 랜덤박스를 엽니다",
+    options: [{ name:"종류", description:"박스 종류", type:3, required:true,
+      choices:[{name:"일반",value:"box_normal"},{name:"고급",value:"box_rare"}] }] },
+  { name: "봇상태", description: "PEPE 봇 시스템 상태 확인" },
+
   { name: "명령어", description: "꼬붕봇 전체 명령어를 확인합니다" },
   { name: "핑", description: "꼬붕봇 상태 확인" },
 
