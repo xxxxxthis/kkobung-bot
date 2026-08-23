@@ -1,4 +1,5 @@
 export const COMMANDS = [
+  { name: "명령어", description: "꼬붕봇 전체 명령어를 확인합니다" },
   { name: "핑", description: "꼬붕봇 상태 확인" },
 
   { name: "출석", description: "하루 1회 출석하고 꼬붕코인을 받습니다" },
