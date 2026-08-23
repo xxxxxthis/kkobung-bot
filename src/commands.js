@@ -1,5 +1,6 @@
 export const COMMANDS = [
   { name: "핑", description: "꼬붕봇 상태 확인" },
+
   { name: "출석", description: "하루 1회 출석하고 꼬붕코인을 받습니다" },
   {
     name: "잔액",
@@ -15,6 +16,7 @@ export const COMMANDS = [
     ]
   },
   { name: "랭킹", description: "꼬붕코인 TOP 10" },
+
   {
     name: "코인플립",
     description: "꼬붕코인을 걸고 동전 던지기",
@@ -31,7 +33,20 @@ export const COMMANDS = [
     description: "꼬붕코인을 걸고 슬롯 돌리기",
     options: [{ name: "금액", description: "베팅 금액", type: 4, required: true, min_value: 1 }]
   },
+
   { name: "주사위", description: "1~100 주사위를 굴립니다" },
+  {
+    name: "가위바위보",
+    description: "꼬붕봇과 가위바위보",
+    options: [{
+      name: "선택", description: "가위/바위/보", type: 3, required: true,
+      choices: [
+        { name: "가위", value: "scissors" },
+        { name: "바위", value: "rock" },
+        { name: "보", value: "paper" }
+      ]
+    }]
+  },
   {
     name: "골라줘",
     description: "선택지 중 하나를 골라줍니다",
@@ -44,6 +59,7 @@ export const COMMANDS = [
     description: "상대와 궁합을 측정합니다",
     options: [{ name: "상대", description: "궁합을 볼 상대", type: 6, required: true }]
   },
+
   {
     name: "팀짜기",
     description: "이름들을 랜덤으로 두 팀으로 나눕니다",
@@ -55,9 +71,53 @@ export const COMMANDS = [
     description: "간단한 찬반 투표를 만듭니다",
     options: [{ name: "질문", description: "투표 질문", type: 3, required: true }]
   },
+
+  { name: "상점", description: "꼬붕봇 상점을 봅니다" },
+  {
+    name: "구매",
+    description: "상점 아이템을 구매합니다",
+    options: [{ name: "아이템", description: "아이템 ID", type: 3, required: true }]
+  },
+  {
+    name: "인벤토리",
+    description: "보유 아이템을 확인합니다",
+    options: [{ name: "유저", description: "확인할 유저", type: 6, required: false }]
+  },
+  { name: "업적", description: "내 업적을 확인합니다" },
+
   {
     name: "프로필",
     description: "꼬붕봇 프로필 확인",
     options: [{ name: "유저", description: "확인할 유저", type: 6, required: false }]
+  },
+
+  {
+    name: "코인지급",
+    description: "관리자 전용: 유저에게 코인을 지급합니다",
+    options: [
+      { name: "유저", description: "대상 유저", type: 6, required: true },
+      { name: "금액", description: "지급 금액", type: 4, required: true, min_value: 1 }
+    ]
+  },
+  {
+    name: "코인회수",
+    description: "관리자 전용: 유저의 코인을 회수합니다",
+    options: [
+      { name: "유저", description: "대상 유저", type: 6, required: true },
+      { name: "금액", description: "회수 금액", type: 4, required: true, min_value: 1 }
+    ]
+  },
+  {
+    name: "경고",
+    description: "관리자 전용: 유저에게 경고를 부여합니다",
+    options: [
+      { name: "유저", description: "경고할 유저", type: 6, required: true },
+      { name: "사유", description: "경고 사유", type: 3, required: true }
+    ]
+  },
+  {
+    name: "경고조회",
+    description: "유저의 경고를 조회합니다",
+    options: [{ name: "유저", description: "조회할 유저", type: 6, required: true }]
   }
 ];
